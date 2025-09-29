@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+<section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img style="border-radius: 50%;" src="logo.jpg" class="logo" alt="Manipur">
+            </a>
+                
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">ITEMS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Our Menu.</h1>
+
+        <section class="course">
+            <h1>Time To Explore!</h1>
+            <p>Our menu features a delightful array of recipes that celebrate the rich culinary heritage of Manipur. It consists of traditional dishes, modern interpretations, and fusion creations that highlight the unique flavors and ingredients of the region.</p>
+            <div class="row">
+                <a href="traditional.html" class="course-col-link">
+                <div class="course-col">
+                    <h3>Traditional Foods</h3>
+                    <p>Explore a rich variety of flavorful recipes from our traditional cuisines, featuring hearty curries, vibrant spices, and indulgent sweets.</p>
+                </div>
+            </a>
+            <a href="festive.html" class="course-col-link">
+                <div class="course-col">
+                    <h3>Occasional Foods</h3>
+                    <p>Experience the joy of occasional cooking with our collection of recipes that celebrate the vibrant flavors and traditions of special occasions.</p>
+                </div>
+            </a>
+            <a href="deserts.html" class="course-col-link">
+                <div class="course-col">
+                    <h3>Deserts</h3>
+                    <p>Indulge in our selection of delightful deserts that showcase the sweet side of Manipuri cuisine.</p>
+                </div>
+            </a>
+            </div>
+        </section>
+        <section class="campus">
+        <h1>Our Tourist Favorites.</h1>
+        <p>Here are some top picks from our foods loved by varieties of tourist who visit our state and had a taste of our delicious cuisines.</p>
+        <div class="row">
+            
+                <div class="campus-col">
+                    <img src="nga thongba.jpg" alt="Fish">
+                    <div class="layer">
+                        <h3>NGA THONGBA (Fish Curry)</h3>
+                    </div>
+                </div>
+            
+                <div class="campus-col">
+                    <img src="Kangsoi.jpg" alt="Simple Curry">
+                    <div class="layer">
+                        <h3>KANGSOI (A Simple Vegetable Curry)</h3>
+                    </div>
+                </div>
+            
+                <div class="campus-col">
+                    <img src="singju.jpg" alt="singju">
+                    <div class="layer">
+                        <h3>SINGJU (Manipuri Salad)</h3>
+                    </div>
+                </div>
+            </div>
+    </section>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>
+                We are a small group of foodies determined to bring the best recipes to the world
+            </p> 
+            <div class="icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                
+            </div>
+            <p> Made by <i class="bi-solid bi-heart"></i>Gayatri</p>
+        
+        </section>
+
+
+
+    <!------javascript------>
+
+<script>
+
+    var navLinks= document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>

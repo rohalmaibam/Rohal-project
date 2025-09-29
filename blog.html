@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+<section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img style="border-radius: 50%;" src="logo.jpg" class="logo" alt="Manipur">
+            </a>
+                
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">ITEMS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Our Reviews from Bloggers</h1>
+        </section>
+
+        <section class="blog">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/user1.jpeg" >
+                    <h2>"The Best Manipuri Food Guide Online"</h2>
+                    <p>When I first stumbled upon this culinary corner of the internet, I wasn't just looking for recipes—I was searching for a genuine connection to the heart of **Manipuri cuisine**. What I found was a digital treasure trove that exceeded every expectation. This isn't just a recipe website; it's an educational journey into the authentic flavors, unique ingredients, and rich cultural stories of Manipur. The creators have done a marvelous job of demystifying dishes like **Eromba** and **Singju**, presenting them with a clarity and passion that makes even a beginner feel confident in the kitchen. The recipes are meticulously detailed, providing both the traditional methods and practical tips for modern cooks. Every photograph is a vibrant invitation, perfectly capturing the freshness and earthy beauty of the food. Since discovering this guide, my cooking repertoire has expanded dramatically. I've successfully recreated several dishes, and the response from my family and friends has been overwhelmingly positive. If you want to explore the *true* taste of Manipuri food, beautifully presented and faithfully taught, you absolutely must make this your definitive online guide. **Highly, highly recommend!**</p>
+                    <h3>- John Doe, Food Blogger</h3>
+                   <div class="comment-box">
+                    <h3>Leave your comment</h3>
+                    <form  class="comment-form">
+                        <input type="text" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment">
+
+                        </textarea>
+                        <button type="submit" class="hero-btn red-btn">COMMENT 
+
+                        </button>
+                    </form>
+                   </div>
+
+                </div>
+                
+            </div>
+
+        </section>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>
+                We are here to show the foods of Manipur.
+            </p> 
+            <div class="icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                
+            </div>
+            <p> Made by <i class="bi-solid bi-heart"></i>Rohal</p>
+        
+        </section>
+
+
+
+    <!------javascript------>
+
+<script>
+
+    var navLinks= document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
